@@ -10,7 +10,7 @@ from nltk.stem.porter import PorterStemmer
 
 tfidfVec = pickle.load(open('./tfidf.pkl','rb'))
 multinomial = pickle.load(open('./Multinomial.pkl','rb'))
-
+nltk.download('punkt')
 def textPreprocessing(text):
     text = text.lower()
     text = nltk.word_tokenize(text)
