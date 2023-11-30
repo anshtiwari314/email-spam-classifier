@@ -6,7 +6,7 @@ import nltk
 import string
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
-stopwords.words('english')
+
 
 tfidfVec = pickle.load(open('./tfidf.pkl','rb'))
 multinomial = pickle.load(open('./Multinomial.pkl','rb'))
